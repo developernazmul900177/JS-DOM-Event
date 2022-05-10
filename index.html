@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #para{
+            background-color: orange;
+            color: #fff;
+            height: 200px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Onclick  -->
+    
+    <!-- <h2 id="myhead" onclick="myClick()">Click on this text</h2>
+
+    <h1 onclick="this.innerHTML = 'Thank for your click'">Hey me h1. Click me if you  want to change me.</h1>
+
+    <script>
+
+        function myClick(){
+            const title = document.querySelector('#myhead');
+            title.innerHTML = "This is changing text";
+        }
+    </script> -->
+
+
+
+
+
+    <!-- Onmouseover & Onmousedown  -->
+
+    <!-- <p id="para" onmousedown="mouseDown()" onmouseup="mouseUP()">This is testing paragraph</p>
+
+    <script>
+
+        function mouseDown(){
+            const myId = document.getElementById('para');
+            myId.style.color = 'red';
+            myId.style.backgroundColor = 'blue';
+            
+        }
+
+        function mouseUP(){
+            document.getElementById('para').style.color = 'blue';
+            document.getElementById('para').style.backgroundColor = 'gold';
+        } 
+    </script> -->
+
+
+
+    <h2 id="myh2" onmouseover="myMouseover()" onmouseleave="myMousedown()">This is mouseover work area. Please mouse over here !</h2>
+
+    <script>
+        function myMouseover(){
+            const h2Here = document.getElementById('myh2');
+            h2Here.style.color = 'red';
+            h2Here.style.backgroundColor = 'pink';
+            h2Here.style.height = '100px';
+            h2Here.style.width = '300px';
+            h2Here.style.textAlign = 'center';
+            h2Here.style.padding = '50px';
+           
+        }
+
+        function myMousedown(){
+            const myNew = document.getElementById('myh2');
+            myNew.style.color = 'blue';
+            myNew.style.backgroundColor = 'gold';
+            myNew.style.height = '100px';
+            myNew.style.width = '300px';
+            myNew.style.textAlign = 'center';
+            myNew.style.padding = ' 50px';
+
+           
+        }
+
+    </script>
+
+</body>
+</html>
